@@ -8,7 +8,6 @@ function save_options() {
 }
 
 function restore_options() {
-  // Use default value color = 'red' and likesColor = true.
   chrome.storage.sync.get(["url","path"], function(items) {
     document.getElementById('url').value = items.url || '';
     document.getElementById('path').value = items.path || '';
